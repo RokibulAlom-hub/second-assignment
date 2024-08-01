@@ -35,15 +35,16 @@ h1{
     text-align: left;
     color: white;
 }
-h2{
+h2{ color: white;
     font-size: 3rem;
-    line-height: 100%;
+    line-height: 120%;
     font-weight: 900;
     text-align: left;
 }
 #h2pro{
+    color: white;
     font-size: 3rem;
-    line-height: 100%;
+    line-height: 120%;
     font-weight: 900;
     text-align: center;
 }
@@ -247,4 +248,29 @@ nav ul a:hover{
     align-items: center;
     gap: 15px;
 
+}
+/* run extra section */
+.run{
+    width: 100%;
+    background-color: var(--grey);
+    border: none;
+    border-radius: 18px;
+    padding: 50px 38px;
+}
+.runwrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.runimg{
+    width: 366px;
+    border-radius: 18px;
+}
+.run img{
+    border-radius: 18px;
+}
+.runtxt{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
