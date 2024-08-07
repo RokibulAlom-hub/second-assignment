@@ -472,9 +472,22 @@ a {
 }
 /* gymtext  */
 .gymtxt > li > p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--grey);
     line-height: 120%;
 
+}
+.gymmem{
+    display: flex;
+    justify-content: space-between;
+
+}
+.gymmem img{
+        width: 390px;
+        height: 330px;
+        border-radius: 30px;
+}
+.gymmem{
+    margin: 100px 0px;
 }
 
