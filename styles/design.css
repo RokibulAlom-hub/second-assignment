@@ -347,6 +347,17 @@ nav ul a:hover{
     gap: 15px;
 
 }
+/* change section responsive  */
+@media screen and (max-width: 400px){
+    .changetxt h2{
+        text-align: center;
+    }
+    .changecards{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
 /* run extra section */
 .run{
     width: 100%;
@@ -372,6 +383,23 @@ nav ul a:hover{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+/* run extra section responsive */
+@media screen and (max-width: 400px){
+    .runwrap{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .runimg{
+        padding: 0px 33px;
+    }
+     h2{
+        font-size: 2rem;
+    }
+    .run p{
+        font-size: 14px;
+    }
+
 }
 /* bmi calculator section */
 .bmititle{
@@ -417,7 +445,17 @@ table, th, td, tr{
     align-items: center;
 }
 #sex,form input{
-    width: 282px;
+    max-width: 336px;
+    padding: 12px 20px;
+    background-color: var(--deepgrey);
+    color: var(--grey);
+    border: none;
+    border-radius: 10px;
+    margin: 5px 10px 10px 0px;
+    display: inline;
+}
+form select{
+    max-width: 577px;
     padding: 12px 20px;
     background-color: var(--deepgrey);
     color: var(--grey);
@@ -425,14 +463,22 @@ table, th, td, tr{
     border-radius: 10px;
     margin: 5px 10px 10px 0px;
 }
-form select{
-    width: 577px;
-    padding: 12px 20px;
-    background-color: var(--deepgrey);
-    color: var(--grey);
-    border: none;
-    border-radius: 10px;
-    margin: 5px 10px 10px 0px;
+form{
+    display: grid;
+    grid-column: 1fr 1fr;
+    
+}
+/* bmi section responsive */
+@media screen and (max-width: 400px){
+    .chartwrap{
+        flex-direction: column;
+    }
+    #sex,form input{
+        max-width: 170px;
+    }
+    .chartpro{
+        margin-top: 35px;
+    }
 }
 /* meet our team members section */
 .member{
@@ -498,6 +544,41 @@ form select{
 .six{
     background-image: url(../images/trainer6.png);
 }
+/* meet our team member responsive */
+@media screen and (max-width: 400px){
+.team{
+    grid-template-columns: 1fr;
+}
+}
+/* gymtext  */
+.gymtxt > li > p{
+    font-size: 1rem;
+    color: var(--grey);
+    line-height: 120%;
+
+}
+.gymmem{
+    display: flex;
+    justify-content: space-between;
+
+}
+.gymmem img{
+        width: 390px;
+        height: 330px;
+        border-radius: 30px;
+}
+.gymmem{
+    margin: 100px 0px;
+}
+/* gymtext responsive  */
+@media screen and (max-width: 400px){
+    .gymmem{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+
 /* footer design */
 footer h2{
     color: var(--red); 
@@ -568,24 +649,14 @@ a {
     background-color: var(--deepgrey);
     padding: 50px 0px;
 }
-/* gymtext  */
-.gymtxt > li > p{
-    font-size: 1rem;
-    color: var(--grey);
-    line-height: 120%;
-
+/* foot wrap design */
+@media screen and (max-width: 400px){
+    .foot{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .flinks{
+        flex-direction: column;
+        gap: 40px;
+    }
 }
-.gymmem{
-    display: flex;
-    justify-content: space-between;
-
-}
-.gymmem img{
-        width: 390px;
-        height: 330px;
-        border-radius: 30px;
-}
-.gymmem{
-    margin: 100px 0px;
-}
-
