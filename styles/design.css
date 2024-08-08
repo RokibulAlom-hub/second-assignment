@@ -115,6 +115,9 @@ nav ul{
     border-radius: 39px;
     padding: 7px 0;
 }
+.ulwrap img {
+    display: none;
+}
 nav a{
     text-decoration: none;
 }
@@ -130,10 +133,28 @@ nav ul a{
     border: none;
     border-radius: 46px;
 }
-
+.ulwrap{
+    display: flex;
+    align-items: center;
+}
 nav ul a:hover{
     background-color: var(--red);
     color: white;
+}
+/* navbar rdesign for mobile */
+@media screen  and (max-width: 400px) {
+    #container{
+        max-width: 405px;
+        height: auto;
+        margin: 0px auto;
+        padding: 0px 20px;
+        }
+     .ulwrap img{
+        display: block;
+     }
+     .ulwrap ul{
+        display: none;
+     }   
 }
 /* banner sectiton styles */
 .banner{
@@ -151,6 +172,10 @@ nav ul a:hover{
 }
 .cardone{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
     top: 20%;
     right: -10%;
     width: 193px;
@@ -174,6 +199,7 @@ nav ul a:hover{
     padding: 0px;
     margin: 0px;
     font-size: 13px;
+    font-weight: 400;
 }
 .cardtwo{
         position: absolute;
@@ -204,6 +230,78 @@ nav ul a:hover{
     background-color: var(--red);
     border-radius: 50px;
 }
+/* banner section mobile responsive design */
+@media screen and (max-width: 400px) {
+    .banner{
+        margin-top: 40px;
+    }
+    .banwrap{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    button{
+        width: 170px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .btnpro{
+        width: 170px;
+        padding: 16px 20px;
+    }
+    .btns{
+        display: flex;
+    }
+    /* cards design for mobile */
+    .cardone{
+        position: absolute;
+        top: 20%;
+        right: -5%;
+        width: 145px;
+        height: 90px;
+        border-radius: 12px;
+        background-color: var(--deepgrey);
+        backdrop-filter: blur(50px);
+        text-align: center;
+        padding: 5px 10px;
+    }
+    .cardtwo{
+        position: absolute;
+        bottom: 15%;
+        left: 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 155px;
+        height: 72px;
+        border-radius: 12px;
+        background-color: var(--deepgrey);
+        backdrop-filter: blur(50px);
+        text-align: center;
+        padding: 5px 5px;
+    }
+    .cardone h3{
+        color: white;
+        font-size:1.9rem;
+        font-weight: 900;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    .cardone , .cardtwo p{
+        text-align: center;
+        font-weight: 400;
+        padding: 0px;
+        margin: 0px;
+        font-size: 9px;
+    }
+    .cardtwo h3{
+        font-size: 1.1rem;
+    }
+}           
 /* change section */
 .changecards{
     display: grid;
