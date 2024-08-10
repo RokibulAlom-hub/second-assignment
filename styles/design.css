@@ -468,13 +468,25 @@ form{
     grid-column: 1fr 1fr;
     
 }
+.fgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#gender{
+    grid-column: span 2;
+}
+select option{
+    background-color: black;
+    padding: 15px;
+    color: white;
+}
 /* bmi section responsive */
 @media screen and (max-width: 400px){
     .chartwrap{
         flex-direction: column;
     }
     #sex,form input{
-        max-width: 170px;
+        max-width: 130px;
     }
     .chartpro{
         margin-top: 35px;
